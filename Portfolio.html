@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>B2013469.Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/Portfolio.css">
+    <script>
+        function displayText() {
+          var textElement = document.getElementById("text");
+          textElement.innerHTML = "Mấy cái này em ghi đại dô cho nhiều á. Data (mainly but not exclusively informational) has been sent via non-electronic (e.g. optical, acoustic, mechanical) means since the advent of communication. Analog signal data has been sent electronically since the advent of the telephone. However, the first data electromagnetic transmission applications in modern time were telegraphy (1809) and teletypewriters (1906), which are both digital signals. The fundamental theoretical work in data transmission and information theory by Harry Nyquist, Ralph Hartley, Claude Shannon and others during the early 20th century, was done with these applications in mind.";
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <h1  id="typing-effect">&#10148;&nbsp;Hi ! Welcome to my Portfolio </h1>
+    </header>
+    <nav>
+        <ul>
+            <button onclick="scrollToSection('section1')" class="button">Info</button>
+            <button onclick="scrollToSection('section2')" class="button">Contact</button>
+        </ul>
+    </nav>
+    <main>
+        
+        <div class="info">
+            <div id="section1">
+            <h2 class="title">Info</h2>
+            <p>Hello, I'm Lê Thành Giỏi, student at Can Tho University majoring in <b>"Computer Networks and Data Communications"</b>. 
+            <br>Belongs to the department of information technology</p>
+            <p>I became a student in 2020...</p>
+            
+            <button onclick="displayText()" class="button">View more</button>
+            <p id="text"></p>
+            <div class="works__img--single">
+                <img src="./img/big-data.jpg" height="150" width="auto" class="centered-image">
+                <img src="./img/network.png" height="150" width="auto" class="centered-image">
+                <img src="./img/Cybersecurity.png" height="150" width="auto" class="centered-image">
+              </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <h2 class="title">Project </h2>
+            <p>Technology field: I know a little about languages like: HTML, Java, Python, C++, Pascal,...</p>
+            <br>
+            <div class="works__img--single">
+                <img src="./img/HTML.png" height="150" width="auto" class="centered-image">
+                <img src="./img/java.png" height="150" width="auto" class="centered-image">
+                <img src="./img/c.png" height="150" width="auto" class="centered-image">
+              </div>
+        </div>
+
+        <div class="info">
+            <h2 class="title">Experience</h2>
+            <p>&bull; Có kinh nghiệm học 5 năm tiểu học, 4 năm trung học cơ sở và 3 năm trung học phổ thông.</p>
+            <p>&bull; Được ủy ban nhân dân cấp chứng minh nhân dân lúc 15 tuổi. Sau đó đến năm 2023 được đổi thành Căn cước công dân.</p>
+            <p>&bull; Hiện tại đang là sinh viên năm thứ 4 của trường đại học Cần Thơ.</p>
+        </div>
+        <div class="info">
+            <div id="section2">
+            <h2>Contact Me</h2>
+            <form>
+                
+                <table>
+                    <tr>
+                        <td>Email <input type="email" placeholder="@example.com"></td>
+                    </tr>
+                    <tr>
+                        <td>Number Phone <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><button class="button" type="submit">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+            <br>
+            <form>
+                <tr>
+                    <td><b>Call me: 0385733***</b></td>
+                    <i class="fas fa-envelope">  gioib2013469@student.ctu.edu.vn<br></i>
+                    <br>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </tr>
+                <td><br></td>
+                <tr>
+                    <td><b><br>Address</b></td>
+                </tr>
+                <tr>
+                    <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7857.5937709326145!2d105.7740735115238!3d10.033613212649366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0895a51d60719%3A0x9d76b0035f6d53d0!2sCan%20Tho%20University!5e0!3m2!1sfr!2s!4v1695305070509!5m2!1sfr!2s" width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                </tr>
+            </form>
+            </div>
+        </div>
+    </main>
+    
+    
+    <script>
+        function scrollToSection(sectionId) {
+          var section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      </script>
+</body>
+<footer>
+    &copy; By B2013469 2023 My Portfolio. All rights reserved.
+</footer>
+</html>
